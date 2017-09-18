@@ -32,7 +32,8 @@ test:
   <<: *default
   database: si_dev_assessment_test
 
-    <<: *default
+production:
+  <<: *default
   database: si_dev_assessment_prod
   username: si_dev_assessment
   password: <%= ENV['si_dev_assessment_prod_DATABASE_PASSWORD'] %>
