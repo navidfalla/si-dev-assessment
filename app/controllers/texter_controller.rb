@@ -3,7 +3,7 @@ require 'twilio-ruby'
 def index
 end
 
-class TextersController < ApplicationController
+class TexterController < ApplicationController
   def index
   end
 
