@@ -1,6 +1,7 @@
 <h1>Welcome to the Texter</h1>
 <h3>You can send a text to a friend (or foe) using this webapp</h3>
-
+<p> <%= ENV["TWILIO_SID"] %> </p>
+<p> <%= ENV["TWILIO_TOKEN"] %> </p>
 <%= form_tag("/text", method: "post") do %>
   <%= label_tag(:number, "Phone Number:") %>
   <%= number_field_tag(:number) %>
